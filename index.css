@@ -92,7 +92,7 @@ body {
   .link {
     color: #50d38d;
     text-decoration: none;
-    padding: 1rem 2 rem;
+    padding: 1rem 2rem;
   }
   .link:hover {
     background-color: rbga(80, 211, 141, 0.2);
