@@ -2,66 +2,102 @@ body {
     font-family: Arial;
     margin: 0 2rem;
     text-align: left;
-}
-
-h1{
+  }
+  
+  .nav {
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid black; */
+  }
+  
+  .left {
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    /* border: 1px solid rgb(248, 31, 31); */
+  }
+  
+  .right {
+    float: right;
+    /* border: 1px solid rgb(241, 30, 30); */
+  }
+  
+  h1 {
     font-size: 48px;
     margin-bottom: 24px;
-}
-h2 {
+  }
+  h2 {
     font-size: 36px;
     margin-bottom: 24px;
-}
-h3 {
+  }
+  h3 {
     font-size: 24px;
-}
-
-.image {
+  }
+  
+  .image {
     object-fit: contain;
     width: 100%;
     box-shadow: -4px 11px 15px -6px pink;
     border-radius: 8px;
   }
-
-.description {
-    color: #746E8C;
+  
+  .description {
+    color: #746e8c;
     line-height: 1.8em;
-    /* padding-right: 20px; */
-    /* margin-bottom: 40px; */
     font-size: 20px;
-}
-
-.button {
-    background: #50D38D;
+  }
+  
+  .button {
+    background: #50d38d;
     color: #fff;
     padding: 20px 40px 18px 40px;
     border-radius: 8px;
     font-size: 18px;
     margin-top: 0.5rem;
-    border: 0;   
-}
-.row {
+    border: 0;
+  }
+  .row {
     display: flex;
     padding: 6rem 4rem;
     justify-content: space-between;
     /* border: 1px solid black; */
   }
-
-/* .container {
-    display: flex;
-    padding: 4rem 4rem;
-    justify-content: space-between;
-    border: 1px solid black;
-} */
-
-.col-2 {
+  
+  /* .container {
+      display: flex;
+      padding: 4rem 4rem;
+      justify-content: space-between;
+      border: 1px solid black;
+  } */
+  
+  .col-2 {
     width: 45%;
-}
-.col-3 {
+  }
+  .col-3 {
     width: 30%;
     margin-right: 3em;
-} 
-#center {
+  }
+  #center {
     width: 100%;
     text-align: center;
   }
+  
+  a {
+    color: #50d38d;
+    text-decoration: none;
+    padding: 0 1rem;
+  }
+  .link {
+    color: #50d38d;
+    text-decoration: none;
+    padding: 1rem 2 rem;
+  }
+  .link:hover {
+    background-color: rbga(80, 211, 141, 0.2);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+  }
+  
+
