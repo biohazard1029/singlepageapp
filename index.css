@@ -1,92 +1,44 @@
 body {
-    font-family: Arial;
-    margin: 0 2rem;
-    text-align: left;
-  }
-  
-  .nav {
-    padding: 2rem 4rem;
-    position: relative;
-    overflow: hidden;
-    /* border: 1px solid black; */
-  }
-  
-  .left {
-    float: left;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    /* border: 1px solid rgb(248, 31, 31); */
-  }
-  
-  .right {
-    float: right;
-    /* border: 1px solid rgb(241, 30, 30); */
-  }
-  
-  h1 {
-    font-size: 48px;
-    margin-bottom: 24px;
-  }
+  font-family: Arial;
+  margin: 0 1rem;
+  text-align: center;
+}
 
+h1 {
+  font-size: 2rem;
+}
+.image {
+  object-fit: contain;
+  width: 75%;
+  box-shadow: -4px 11px 15px -6px pink;
+  border-radius: 8px;
+}
 
-  h2 {
-    font-size: 36px;
-    margin-bottom: 24px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  
-  .image {
-    object-fit: contain;
-    width: 100%;
-    box-shadow: -4px 11px 15px -6px pink;
-    border-radius: 8px;
-  }
-  
-  .description {
-    color: #746e8c;
-    line-height: 1.8em;
-    font-size: 20px;
-  }
-  
-  .button {
+#center {
+  width: 100%;
+  text-align: center;
+}
+.description {
+  color: #746e8c;
+  line-height: 1.8em;
+  font-size: 15px;
+}
+.button {
+  background: #50d38d;
+  color: #fff;
+  padding: 20px 40px;
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+}
+ .button-sm{
     background: #50d38d;
     color: #fff;
-    padding: 20px 40px 18px 40px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
-    font-size: 18px;
-    margin-top: 0.5rem;
     border: 0;
   }
 
-  .row {
-    display: flex;
-    padding: 6rem 4rem;
-    justify-content: space-between;
-    /* border: 1px solid black; */
-  }
-  
-  /* .container {
-      display: flex;
-      padding: 4rem 4rem;
-      justify-content: space-between;
-      border: 1px solid black;
-  } */
-  
-  .col-2 {
-    width: 45%;
-  }
-  .col-3 {
-    width: 30%;
-    margin-right: 3em;
-  }
-  #center {
-    width: 100%;
-    text-align: center;
-  }
-  
   a {
     color: #50d38d;
     text-decoration: none;
@@ -96,12 +48,131 @@ body {
     color: #50d38d;
     text-decoration: none;
     padding: 1rem 2rem;
+    /* padding: 0.5rem 1rem; */
   }
   a:hover {
-    background-color: rgba(80,211,141, 0.2);
+    background-color: rgba(80, 211, 141, 0.2);
     border-radius: 8px;
     padding: 1rem 2rem;
+    /* padding: 0.5rem 1rem; */
   }
-  
+  .description {
+    font-size: 15px;
+  }
 
 
+.nav {
+  padding: 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.left span {
+  font-size: 75%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200%;
+  padding-left: 1rem;
+  border: 1px solid green;
+}
+
+.left {
+  float: left;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  /* border: 1px solid rgb(248, 31, 31); */
+}
+
+.right {
+  float: right;
+  border: 1px solid rgb(241, 30, 30);
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+  padding: 6rem 4rem;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.col-2 {
+  width: 45%;
+  /* border: 1px solid red; */
+}
+.col-3 {
+  width: 30%;
+  margin-right: 3em;
+  /* border: 1px solid red; */
+}
+.row {
+  padding: 2rem 1rem;
+}
+.col-3 {
+  padding: 1rem;
+}
+
+.nav {
+    padding: 2rem 0rem;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+  }
+  .left span {
+    font-size: 75%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200%;
+    padding-left: 1rem;
+  }
+
+  .left {
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .right {
+    float: right;
+    height: 100;
+  }
+
+
+
+ @media (min-width: 768px) {
+  body {
+    text-align: left;
+    margin: 0 2rem;
+  }
+  .image {
+      width: 100%;
+  }
+  .button {
+      width:auto;
+  }
+  .row {
+    justify-content: space-between;
+    display: flex;
+    padding: 6rem 4rem;
+  }
+  .col-2 {
+    width: 45%;
+  }
+  .col-3 {
+    width: 33%;
+  }
+}  
