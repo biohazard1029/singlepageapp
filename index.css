@@ -8,10 +8,14 @@ h1 {
   font-size: 2rem;
 }
 .image {
-  object-fit: contain;
+  object-fit: cover;
   width: 75%;
   box-shadow: -4px 11px 15px -6px pink;
   border-radius: 8px;
+
+  object-fit: cover;
+  height: auto;
+  object-position: center;
 }
 
 #center {
@@ -27,44 +31,44 @@ h1 {
   background: #50d38d;
   color: #fff;
   padding: 20px 40px;
-  width: 100%;
+  width: auto;
   border-radius: 8px;
   border: 0;
 }
- .button-sm{
-    background: #50d38d;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    border: 0;
-  }
+.button-sm {
+  background: #50d38d;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 0;
+}
 
-  a {
-    color: #50d38d;
-    text-decoration: none;
-    padding: 0 1rem;
-  }
-  .link {
-    color: #50d38d;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    /* padding: 0.5rem 1rem; */
-  }
-  a:hover {
-    background-color: rgba(80, 211, 141, 0.2);
-    border-radius: 8px;
-    padding: 1rem 2rem;
-    /* padding: 0.5rem 1rem; */
-  }
-  .description {
-    font-size: 15px;
-  }
-
+a {
+  color: #50d38d;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.link {
+  color: #50d38d;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  /* padding: 0.5rem 1rem; */
+}
+a:hover {
+  background-color: rgba(80, 211, 141, 0.2);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  /* padding: 0.5rem 1rem; */
+}
+.description {
+  font-size: 15px;
+}
 
 .nav {
   padding: 2rem 4rem;
   position: relative;
   overflow: hidden;
+  border: 1px solid green;
 }
 .left span {
   font-size: 75%;
@@ -104,75 +108,79 @@ h3 {
 
 .row {
   display: flex;
-  padding: 6rem 4rem;
+  padding: auto;
   justify-content: space-between;
-  /* border: 1px solid black; */
+  flex-wrap: wrap;
 }
 
 .col-2 {
-  width: 45%;
-  /* border: 1px solid red; */
-}
-.col-3 {
-  width: 30%;
-  margin-right: 3em;
-  /* border: 1px solid red; */
-}
-.row {
-  padding: 2rem 1rem;
-}
-.col-3 {
-  padding: 1rem;
+  padding: 1rem 0;
+  height: 100%;
 }
 
+#invertMobile{
+  flex-direction: column-reverse
+}
+.col-3 {
+  width: 100%;
+  /* border: 1px solid red; */
+}
 .nav {
-    padding: 2rem 0rem;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid black;
-  }
-  .left span {
-    font-size: 75%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 200%;
-    padding-left: 1rem;
-  }
+  padding: 2rem 0rem;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+}
+.left span {
+  font-size: 75%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200%;
+  padding-left: 1rem;
+}
 
-  .left {
-    float: left;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-  }
-  .right {
-    float: right;
-    height: 100;
-  }
+.left {
+  float: left;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.right {
+  float: right;
+  height: 100;
+}
 
 
 
- @media (min-width: 768px) {
+
+
+@media (min-width: 768px) {
   body {
     text-align: left;
     margin: 0 2rem;
   }
   .image {
-      width: 100%;
+    width: 100%;
   }
   .button {
-      width:auto;
+    width: auto;
   }
   .row {
     justify-content: space-between;
     display: flex;
     padding: 6rem 4rem;
   }
+
   .col-2 {
     width: 45%;
   }
+#invertMobile{
+  flex-direction: row;
+}
+
   .col-3 {
-    width: 33%;
+    width: 30%;
+    padding-right: 1rem;
   }
-}  
+}
